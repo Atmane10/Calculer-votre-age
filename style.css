@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #780206;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #040720, #20b5fa);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #491558, #c587e2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 50px 30px;
+}
+
+.container .inputs-wrapper{
+    background-color: rgb(194, 201, 206);
+    padding: 30px 30px;
+    box-shadow: 0 15px 25px rgba(5, 5, 5, 0.3);
+    border-radius: 3rem;
+}
+
+.inputs-wrapper input, .inputs-wrapper button{
+    background: #20b5fa;
+    border: none;
+    color:aliceblue;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+.inputs-wrapper input{
+    width: 60%;
+    font-size: 14px;
+    border-radius: 0rem 1.3rem 0rem 1.3rem;
+    margin-left: 8px;
+}
+
+.inputs-wrapper button{
+    width: 30%;
+    border-radius: 0.7rem;
+    margin-left: 20px;
+    cursor: pointer; 
+}
+
+.output{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.output div{
+    width: 100px;
+    height: 100px;
+    color:white;
+    margin-top: 50px;
+    margin: 20px;
+    box-shadow: 0 15px 25px rgba(5, 5, 5, 0.3);
+    display: grid;
+    place-items: center;
+    border-radius: 0rem 3rem 0rem 3rem;
+
+}
+
+.moi{
+    margin-top: 30px;
+    font-family: sans-serif;
+    color:darkgrey;
+    font-size: 15px;
+    right: 0;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.5s;
+    text-align: end;
+}
+
+.moi:hover{
+    color:white;
+    transform: translate(7px);
+}
+.top{
+    margin-right: 70px;
+    margin-left: 70px;
+    font-weight: bold;
+    transition: all 0.5s;
+    color: whitesmoke; 
+}
+
+.output div span{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.output div p{
+    font-size: 14px;
+    font-weight: 400;
+}
